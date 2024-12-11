@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300,600&display=swap" rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+     
+        header {
+            background: linear-gradient(135deg, #3a8cdb, #7367f0);
+            color: #ffffff;
+            padding: 100px 0;
+            text-align: center;
+            clip-path: ellipse(80% 100% at 50% -20%);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #e0e4f0;
+            animation: fadeIn 2s ease;
+        }
+
+    
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+     
+        .section {
+            background: #ffffff;
+            padding: 30px;
+            margin: 15px 0;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .section h2 {
+            color: #3a8cdb;
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        #libang img {
+            width: 100px; /* Adjust size as needed */
+            margin: 10px; /* Add margin between images */
+        }
+
+        #libang td {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            color: #555;
+            text-align: center;
+        }
+
+      
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #about img {
+            max-width: 180px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        #about img:hover {
+            transform: scale(1.1);
+        }
+
+     
+        footer {
+            background: #3a8cdb;
+            color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .container {
+                width: 95%;
+            }
+
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maligayang pag dating sa aking Portfolio</h1>
+        <p>"Life's a question and the answer was to live it."</p>
+    </header>
+    <div class="container">
+        <section id="about" class="section">
+            <img src="jm-imgs/me4.jpg" alt="My Picture">
+            <h2>Tungkol sa akin</h2>
+            <p>Magandang araw ako nga pala si Jhon Michael Voluntad</p>
+            <p>Ang aking kasalukuyang tahanan ay Navotas City</p>
+            <p>Ang aking edad ay X. Given: 6x + 5 = 131. Find X.</p>
+        </section>
+        <section id="libang" class="section">
+            <h2>Aking mga libangan</h2>
+            <table>
+                <tr>
+                    <td><img src="jm-imgs/bball.png" alt="Basketball"></td>
+                    <td><img src="jm-imgs/gaming.png" alt="Gaming"></td>
+                    <td><img src="jm-imgs/workout.png" alt="Workout"></td>
+                </tr>
+                <tr>
+                    <td>Sports</td>
+                    <td>Online/Offline games</td>
+                    <td>Workouts</td>
+                </tr>
+            </table>
+        </section>
+        <section class="section">
+            <h2>Aking gusto</h2>
+            <p>Gusto ko maging aktibo sa lahat ng aking araw</p>
+            <p>Makamit lahat ng aking layunin</p>
+            <p>At makapag bunga ng resulta</p>
+        </section>
+        <section class="section">
+            <h2>Aking pangarap</h2>
+            <p>Makamit lahat ng aking gusto kung saan ang aking abilidad na maging malaya ay hindi napipigilan.</p>
+        </section>
+    </div>
+    <footer>
+        <p>Kumonekta sakin sa <a href="https://www.facebook.com/JMVol">Facebook</a> | <a href="https://www.instagram.com/mjhnggggggg/">Instagram</a></p>
+    </footer>
+</body>
+</html>

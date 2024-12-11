@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h2 class="logo"><a href="#home">James</a></h2>
+      <input type="checkbox" id="menu-toggler">
+      <label for="menu-toggler" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </label>
+      <ul class="all-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Skills</a></li>
+        <li><a href="#portfolio">My Pictures</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="homepage" id="home">
+    <div class="content">
+      <div class="text">
+        <h1>James Michael R. Santos</h1>
+        <p>Computer Science <br> Student</p>
+      </div>
+      <a href="#services" class="btn">Know Me</a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>My Skills</h2>
+    <ul class="cards">
+      <li class="card">
+        <h3>Eager to Learn</h3>
+        <p>Very enthusiastic about learning.</p>
+      </li>
+      <li class="card">
+        <h3>Problem-Solving</h3>
+        <p>Strong analytical skills enable me to tackle complex technical challenges creatively and efficiently.</p>
+      </li>
+      <li class="card">
+        <h3>Adaptability</h3>
+        <p>The tech landscape evolves rapidly, and being open to learning new technologies and adapting to changes is vital for long-term success in my career.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h2>My Pictures</h2>
+    <p>Take a look at my pictures.</p>
+    <ul class="cards">
+      <li class="card">
+        <img src="pic/1st.jpg" alt="First image">
+      </li>
+      <li class="card">
+        <img src="pic/2nd.jpg" alt="Second image">
+      </li>
+      <li class="card">
+        <img src="pic/3rd.jpg" alt="Third image">
+      </li>
+    </ul>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="row company-info">
+      <p>Hello! My name is James Michael R. Santos, and I am currently a first-year student pursuing a Bachelor of Science in Computer Science (BSCS). I have always been fascinated by technology and how it shapes our world. From a young age, I enjoyed playing video games and exploring how they are made. This curiosity led me to choose computer science as my major.</p>
+    </div>
+    <div class="row mission-vision">
+      <p>As a first-year student, I am excited to learn the basics of programming, algorithms, and data structures. I am eager to develop my skills in coding languages like Python and Java. I believe that understanding these concepts will help me build amazing software and applications in the future.</p>
+      <p>In addition to my studies, I enjoy participating in group projects and collaborating with my classmates. I love sharing ideas and learning from others. Outside of school, I like to play video games, read tech blogs, and explore new technologies.</p>
+    </div>
+    <div class="row team">
+      <p>I am looking forward to growing as a computer scientist and discovering where this journey will take me! Thank you for taking the time to get to know me.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Reach out to me with any questions!</p>
+    <div class="row">
+      <div class="col information">
+        <div class="contact-details">
+          <p><i class="fas fa-envelope"></i> santos.j.m.bscs@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <span>Copyright &copy; 2024 All Rights Reserved</span>
+      <span class="link">
+        <a href="#home">Home</a>
+        <a href="#contact">Contact</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>

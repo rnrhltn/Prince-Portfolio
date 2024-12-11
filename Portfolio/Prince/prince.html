@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="princeportfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header"> 
+        <div class="container">
+            <nav>
+                <img src="imgs/Logo Prince.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home</a></li>
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#futures"> Future</a></li>
+                    <li><a href="#portfolio"> Portfolio</a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hi, I'm <span>Price Bryle</span><br> Ayuro Guolvez</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------------about me------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imgs/Portrait.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> Highly motivated individual with a
+                        strong interest in problem solving,
+                        active listening, and communication,
+                        looking for an entry-level role at a
+                        forward-thinking company.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Creativity</span></li>
+                            <li><span>Fast Learner</span></li>
+                            <li><span>Computer Literacy</span></li>
+                            <li><span>Adaptability</span></li>
+                            <li><span>Teamwork</span></li>
+                            <li><span>Problem Solving</span></li>   
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>No Experience yet</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Present</span><br>Bachelor of Science in Computer Science<br>Eulogio Amang Rodriguez Institute of Science and Technology</li>
+                            <li><span>2021-2023</span><br>Science, Technology, Engineering and Mathematics<br>Santolan High School</li>
+                            <li><span>2014-2020</span><br>CSS Elective<br>Santolan High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------5 year vision----------- -->
+    <div id="futures">
+        <div class="container">
+            <h1 class="sub-title">Five-Year Vision</h1>
+            <div class="futures-list">
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Career Advancement</h2>
+                    <p>I plan to continue enhancing my expertise in programming, staying current with emerging trends and technologies.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-school"></i>
+                    <h2>Education and Certification</h2>
+                    <p>Engage in continuous professional development through workshops, seminars, and online courses.
+                    </p>  
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-up-right-dots"></i>
+                    <h2>Personal Growth</h2>
+                    <p>Strive for a balanced lifestyle that allows for personal hobbies, family time, and community involvement.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------------------------portfolio----------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Hobbies and Interest</h1>
+            <div class="hobby-list">
+                <div class="hobby">
+                    <img src="imgs/Dance.jpg" alt="Dancing">
+                    <div class="layer">
+                        <h3>Dancing</h3>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <img src="imgs/Movie.jpg" alt="Movie">
+                    <div class="layer">
+                        <h3>Watching Movie</h3>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <img src="imgs/Eating.jpg" alt="Eating">
+                    <div class="layer">
+                        <h3>Eating</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------------contact----------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>pguolvez@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09614702382</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100011249290701&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/rnrhltnnew"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/rnrhltn/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/prince-bryle-guolvez-b30031341/">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="../resume/Guolvez_Resume.pdf" download class="btn btn2">Donwload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Prince 2024 All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="../Prince/portfolio.js"></script>
+</body>
+</html>

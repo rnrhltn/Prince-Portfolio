@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #080808;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-top: 10px;
+}
+
+.team-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .team-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .team-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .team-member {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .image-container {
+    width: 100%;
+    padding-top: 100%; /* Ensures square aspect ratio */
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .team-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding:20px;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #555;
+    padding: 10px;
+  }
+
+
+  .getstarted-button {
+    background: #333333;
+    color: #FAF3DD;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #333333;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .getstarted-button .get-started-icon {
+    background: #FAF3DD;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.1em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #333333;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .getstarted-button:hover .get-started-icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .getstarted-button .get-started-icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #333333;
+  }
+  
+  .getstarted-button:hover .get-started-icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .getstarted-button:active .get-started-icon {
+    transform: scale(0.95);
+  }
+
+  a{
+    text-decoration: none;
+    color: #080808;
+  }
+  
+ 
